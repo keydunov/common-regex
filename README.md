@@ -1,6 +1,7 @@
-# Common::Regex
+# CommonRegex
 
-TODO: Write a gem description
+Collection of regular expressions in Ruby
+
 
 ## Installation
 
@@ -20,7 +21,12 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+
+```ruby
+  # in model
+  validates_format_of :email, :with => CommonRegex::EMAIL
+  validates_format_of :phone_number, :with => CommonRegex::PHONE
+```
 
 ## Contributing
 
