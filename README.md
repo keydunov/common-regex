@@ -25,7 +25,7 @@ Or install it yourself as:
 ```ruby
   # in model
   validates_format_of :email, :with => CommonRegex::EMAIL
-  validates_format_of :phone_number, :with => CommonRegex::PHONE
+  validates_format_of :phone_number, :with => CommonRegex::E164PHONE
 ```
 
 ## Contributing
