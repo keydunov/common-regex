@@ -11,7 +11,7 @@ module CommonRegex
   URL = /(\A\z)|(\A(http|https):\/\/[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(([0-9]{1,5})?\/.*)?\z)/ix
 
   # E.164 number can have up to 15 digits, although  the specification also doesn't indicate a minimum, so I wouldn't necessarily count on 10.
-  E164PHONE = /^\+?\d{10,15}$t/
+  E164PHONE = /^\+\d{10,15}$/
 
   USERNAME = /\A[a-zA-Z0-9_]*\z/
 end

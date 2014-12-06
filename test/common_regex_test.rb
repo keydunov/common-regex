@@ -11,12 +11,19 @@ class CommonRegexTest < Test::Unit::TestCase
   end
 
   def test_valid_dates
-    dates = 
     check_valid_regex CommonRegex::ISO8601DATETIME, ["2012-01-01T00:00:00Z", "2012-01-01T00:00:00+00:00", "2012-01-01T00:00:00.00Z", "2010-02-18T16:23:48.541-06:00"]
   end
 
   def test_invalid_dates
     check_invalid_regex CommonRegex::ISO8601DATETIME, ["200905", "2009367", "2009-05-19 14:39:22+06a00"]
+  end
+
+  def test_valid_phones
+    check_valid_regex CommonRegex::E164PHONE, ["+12345678900", "+442071838750"]
+  end
+
+  def test_invalid_phones
+    check_invalid_regex CommonRegex::E164PHONE, ["+1-"]
   end
 
   private
