@@ -19,7 +19,7 @@ class CommonRegexTest < Test::Unit::TestCase
   end
 
   def test_valid_phones
-    check_valid_regex CommonRegex::E164PHONE, ["+12345678900", "+442071838750"]
+    check_valid_regex CommonRegex::E164PHONE, ["+12345678900", "+442071838750", "79261433451"]
   end
 
   def test_invalid_phones
