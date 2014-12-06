@@ -1,6 +1,6 @@
 # CommonRegex
 
-Collection of regular expressions in Ruby
+Collection of regular expressions in Ruby.
 
 
 ## Installation

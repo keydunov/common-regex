@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'common/regex/version'
+require 'common-regex/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "common-regex"
   spec.version       = Common::Regex::VERSION
   spec.authors       = ["Artyom Keydunov"]
   spec.email         = ["artyom.keydunov@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Collection of regular expressions in Ruby}
+  spec.description   = %q{Collection of regular expressions in Ruby}
   spec.homepage      = ""
   spec.license       = "MIT"
 
