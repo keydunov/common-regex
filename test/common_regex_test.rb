@@ -26,6 +26,14 @@ class CommonRegexTest < Test::Unit::TestCase
     check_invalid_regex CommonRegex::E164PHONE, ["+1-"]
   end
 
+  def test_valid_usernames
+    check_valid_regex CommonRegex::USERNAME, ["test_dude", "test.dude", "111___lolol..."]
+  end
+
+  def test_invalid_phones
+    check_invalid_regex CommonRegex::USERNAME, ["sss s s s кри"]
+  end
+
   private
 
   def check_valid_regex(regexp, strings)

@@ -13,5 +13,5 @@ module CommonRegex
   # E.164 number, useful for using with Twilio
   E164PHONE = /\A\+?\d{10,14}\z/
 
-  USERNAME = /\A[a-zA-Z0-9_]*\z/
+  USERNAME = /\A[a-zA-Z0-9\._]*\z/
 end
